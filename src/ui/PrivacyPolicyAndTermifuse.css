@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+.old{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    padding: 80px;
+    background-image: url(../assets/texture.jpg);
+}
+
+.old span{
+    color: white;
+    font-size: 20px;
+}
+
+.old span svg{
+width: 3vw;
+color: white;
+}
+
+.policy
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 50px;
+}
+
+.police
+{
+     max-width: 800px;      
+     margin: 0 auto;     
+     padding: 20px;  
+}
+
+.policys{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.policys div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.policys h1{
+   font-family: "Libertinus Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.policys p{
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.571);
+}

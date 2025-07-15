@@ -1,0 +1,264 @@
+#Qrcode{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.qrcode{
+display: flex;
+flex-direction: column;
+gap: 25px;
+text-align: center;
+padding-block: 50px;
+}
+
+.qrcode h1{
+font-size: 40px;
+font-weight: 900;
+color: #05051c;
+}
+
+.qrcode .qrcodeInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcode .qrcodeInput input{
+   border: 2px solid #05051c;
+   width: 23vw;
+   height: 7vh;
+   border-radius: 3px;
+   padding: 10px;
+}
+
+.qrcode .qrcodeInput button{
+   border: 2px solid #05051c;
+   width: 8vw;
+   height: 7vh;
+   background-color: #05051c;
+   color: white;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.qrcodeinput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.qrcodeinput span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.qrcodeinput span input{
+cursor: pointer;
+}
+
+.qrcodeImg{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.qrcodeImg button{
+   width: 10vw;
+   height: 7vh;
+   background-color: green;
+   color: white;
+   font-weight: 700;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+
+.important{
+   box-shadow: 0 4px 10px #00000080;
+   padding: 50px;
+   width: 50vw;
+   justify-content: space-between;
+   display: flex;
+}
+
+/*========== phone ==========*/
+@media (max-width:768px){
+    .qrcode h1 {
+    font-size: 25px;
+}
+
+.qrcode .qrcodeInput input {
+    border: 2px solid #05051c;
+    width: auto;
+    height: 6vh;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.qrcode .qrcodeInput button {
+    width: 25vw;
+    height: 6vh;
+}
+
+.qrcodeinput {
+    gap: 5px;
+    padding-block: 20px;
+}
+
+.important {
+    padding: 10px;
+    width: auto;
+    flex-direction: column;
+}
+
+.qrcodeImg button {
+    width: 35vw;
+    height: 6vh;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+}
+/*========== end ==========*/
+
+
+/*========== tablet ==========*/
+@media (min-width:769px)
+and (max-width:900px){
+     .qrcode h1 {
+    font-size: 25px;
+}
+
+.qrcode .qrcodeInput input {
+    border: 2px solid #05051c;
+    width: 30vw;
+    height: 4vh;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.qrcode .qrcodeInput button {
+    width: 15vw;
+    height: 4vh;
+}
+
+.qrcodeinput {
+    gap: 5px;
+    padding-block: 20px;
+}
+
+.important {
+    padding: 10px;
+    width: auto;
+    flex-direction: column;
+}
+
+.qrcodeImg button {
+    width: 20vw;
+    height: 4vh;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+}
+
+@media (min-width:901px)
+and (max-width:1024px){
+     .qrcode h1 {
+    font-size: 25px;
+}
+
+.qrcode .qrcodeInput input {
+    border: 2px solid #05051c;
+    width: 30vw;
+    height: 3vh;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.qrcode .qrcodeInput button {
+    width: 15vw;
+    height: 3vh;
+}
+
+.qrcodeinput {
+    gap: 5px;
+    padding-block: 20px;
+}
+
+.important {
+    padding: 10px;
+    width: auto;
+    flex-direction: column;
+}
+
+.qrcodeImg button {
+    width: 20vw;
+    height: 3vh;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+}
+/*========== end ==========*/
+
+
+
+
+/*========== laptop ==========*/
+@media (min-width:1281px) and (max-width:1920px){
+   .qrcode .qrcodeInput input {
+    height: 5vh;
+}
+
+.qrcode .qrcodeInput button {
+    height: 5vh;
+}
+
+.qrcodeImg button {
+    height: 5vh;
+}
+}
+
+@media (min-width:1921px) and (max-width:2048px){
+   .qrcode .qrcodeInput input {
+    height: 4vh;
+}
+
+.qrcode .qrcodeInput button {
+    height: 4vh;
+}
+
+.qrcodeImg button {
+    height: 4vh;
+}
+}
+
+@media (min-width:2049px) and (max-width:2496px){
+   .qrcode .qrcodeInput input {
+    height: 3.5vh;
+}
+
+.qrcode .qrcodeInput button {
+    height: 3.5vh;
+}
+
+.qrcodeImg button {
+    height: 3.5vh;
+}
+}
+/*========== end ==========*/

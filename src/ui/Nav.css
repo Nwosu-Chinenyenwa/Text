@@ -1,0 +1,452 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-inline: 50px;
+    font-size: 13px;
+    padding: 10px;
+    z-index: 0;
+}
+
+nav img{
+    height: 10vh;
+    width: 20vw;
+}
+
+nav .nav-menu{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+} 
+
+nav .nav-menu span{
+width: 1vw;
+height: 2vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+nav h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav .nav-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+nav .nav-contact svg{
+  width: 1.5vw;
+}
+
+.menu{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    background-color: rgba(33, 32, 32, 0.708);
+    z-index: 60;
+}
+
+.menuNav{
+    z-index: 50;
+    background-color: white;
+    width: 40vw;
+    height: 100vh;
+    position: fixed;
+    padding: 30px;
+    padding-block: 70px;
+    animation:  view 0.2s;
+}
+
+@keyframes view{
+    from{
+        transform: translateX(-20%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.menuNav h1{
+display: flex;
+justify-content: right;
+align-items: center;
+font-size: 18px;
+padding: 25px;
+font-weight: 400;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.menuNav h1:hover{
+transform: translateY(-20%);
+}
+
+.menuNav h1 svg{
+width: 2vw;
+margin-left: 5px;
+}
+
+.menuNav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menuNav li {
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.menuNav li:hover{
+    transform: translateY(-20%);
+}
+
+.menuNav ul li:hover span{
+    opacity: 2;
+}
+
+.menuNav ul li span{
+    width: 0.1vw;
+    position: static;
+    height: 5vh;
+    transition: 0.5s;
+    opacity: 0;
+    display: block;
+   background-color:black;
+}
+
+@media (max-width:768px){
+    nav{
+    padding-inline: 0px;
+    font-size: 10px;
+    padding: 10px;
+}
+
+nav img{
+    height: 5vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 4.5vw;
+height: 2vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+nav .nav-contact svg {
+    width: 5vw;
+}
+
+.menuNav{
+    width: 100vw;
+    padding-block: 10px;
+}
+
+.menuNav ul{
+    gap: 30px
+}
+
+.menuNav ul li{
+    font-size: 20px;
+}
+
+.menuNav ul li span{
+    height: 4vh;
+}
+}
+
+/*========== tablet ==========*/
+@media (min-width:769px) and (max-width:800px){
+    nav img{
+    height: 5vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 2vw;
+height: 1.3vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+nav .nav-contact svg {
+    width: 2.8vw;
+}
+
+.menuNav{
+    width: 100vw;
+    padding-block: 10px;
+}
+
+.menuNav ul{
+    gap: 30px
+}
+
+.menuNav ul li{
+    font-size: 20px;
+}
+
+.menuNav ul li span{
+    height: 2vh;
+}
+}
+
+@media (min-width:801px) and (max-width:900px){
+
+    nav img{
+    height: 5vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 2vw;
+height: 1.5vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+nav .nav-contact svg {
+    width: 3vw;
+}
+
+.menuNav{
+    width: 100vw;
+    padding-block: 10px;
+}
+
+.menuNav ul{
+    gap: 30px
+}
+
+.menuNav ul li{
+    font-size: 20px;
+}
+
+.menuNav ul li span{
+    height: 2vh;
+}
+}
+
+@media (min-width:901px) and (max-width:916px){
+
+    nav img{
+    height: 3vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 2vw;
+height: 1vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+nav .nav-contact svg {
+    width: 3vw;
+}
+
+.menuNav{
+    width: 100vw;
+    padding-block: 10px;
+}
+
+.menuNav ul{
+    gap: 30px
+}
+
+.menuNav ul li{
+    font-size: 20px;
+}
+
+.menuNav ul li span{
+    height: 2vh;
+}
+}
+
+@media (min-width:917px) and (max-width:1024px){
+
+    nav img{
+    height: 3vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 1.3vw;
+height: 1vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+nav .nav-contact svg {
+    width: 3vw;
+}
+
+.menuNav{
+    width: 100vw;
+    padding-block: 10px;
+}
+
+.menuNav ul{
+    gap: 30px
+}
+
+.menuNav ul li{
+    font-size: 20px;
+}
+
+.menuNav ul li span{
+    height: 2vh;
+}
+}
+/*========== end ==========*/
+
+
+
+/*========== laptop ==========*/
+@media (min-width:1281px) and (max-width:1440px){
+    nav{
+padding-inline: 30px;
+}
+
+nav img{
+    height: 7vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 1vw;
+height: 1.8vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+.menuNav ul li span{
+    height: 4vh;
+}
+}
+
+@media (min-width:1441px) and (max-width:1680px){
+    nav{
+padding-inline: 30px;
+}
+
+nav img{
+    height: 7vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 1vw;
+height: 1.7vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+.menuNav ul li span{
+    height: 3vh;
+}
+}
+
+@media (min-width:1681px) and (max-width:1920px){
+    nav{
+padding-inline: 30px;
+}
+
+nav img{
+    height: 7vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 1vw;
+height: 1.8vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+.menuNav ul li span{
+    height: 3vh;
+}
+}
+
+@media (min-width:1921px) and (max-width:2048px){
+    nav{
+padding-inline: 30px;
+}
+
+nav img{
+    height: 6vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 1vw;
+height: 1.5vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+} 
+
+.menuNav ul li span{
+    height: 3vh;
+}
+}
+
+@media (min-width:2049px) and (max-width:2496px){
+       nav{
+padding-inline: 30px;
+}
+
+nav img{
+    height: 4vh;
+    width: 20vw;
+}
+
+nav .nav-menu span{
+width: 1vw;
+height: 1.5vh;
+border-radius: 200px;
+display: block;
+background-color: white;
+}  
+
+.menuNav ul li span{
+    height: 3vh;
+}
+
+.menuNav ul li span{
+    height: 3vh;
+}
+
+.menuNav h1 svg
+ {
+    width: 1.5vw;
+    margin-left: 5px;
+}
+}
+/*========== end ==========*/

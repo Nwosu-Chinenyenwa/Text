@@ -1,0 +1,245 @@
+/* #0f223180 */
+/* #about{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+} */
+
+.about{
+    background-color:#000910 ;
+    color: white;
+    padding-block: 100px;
+}
+
+.about h1{
+    font-size: 27px;
+    width: 60vw;
+    padding-inline-start: 50px;
+}
+
+.aboutBox{
+background-image: url(../assets/about.svg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 50px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+
+.aboutcard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .aboutBox h5{
+color: #333;
+letter-spacing: .1em;
+}
+
+.Acard{
+width: 25vw;
+background-color: #0f223180;
+padding: 20px 20px;
+height: 50vh;
+display: flex;
+z-index: 20;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.Acard span{
+    display: flex;
+    gap: 20px;
+}
+
+.Acard span h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.Acard span img{
+    width: 0.9vw;
+}
+
+.Acard p{
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+/*========== phone ==========*/
+@media (max-width:768px){
+.about {
+   padding: 5px;
+}
+
+   .about h1{
+    font-size: 17px;
+    width: auto;
+    padding-inline-start: 0px;
+} 
+
+.aboutBox{
+    padding: 0px;
+    padding-block: 20px;
+}
+
+.aboutcard
+ {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Acard {
+    width: 90vw;
+    padding: 20px 10px;
+    height: 35vh;
+}
+
+.Acard span img {
+    width: 2vw;
+}
+
+.Acard span h3 {
+    font-size: 20px;
+}
+}
+/*========== end ==========*/
+
+
+/*========== laptop ==========*/
+@media (min-width:768px) and (max-width:900px){
+    .aboutBox {
+    padding: 10px;
+    gap: 20px;
+}
+
+     .about h1{
+    font-size: 23px;
+    width: 80vw;
+    padding-inline-start: 0px;
+} 
+
+.aboutcard
+ {
+    gap: 20px;
+    padding: 0px;
+}  
+
+.Acard {
+    width: fit-content;
+    padding: 20px 10px;
+    height: 28vh;
+}
+
+.Acard span h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+}
+
+@media (min-width:901px) and (max-width:916px){
+    .aboutBox {
+    padding: 10px;
+    gap: 20px;
+}
+
+     .about h1{
+    font-size: 23px;
+    width: 80vw;
+    padding-inline-start: 0px;
+} 
+
+.aboutcard
+ {
+    gap: 20px;
+    padding: 0px;
+}  
+
+.Acard {
+    width: fit-content;
+    padding: 20px 10px;
+    height: 15vh;
+}
+
+.Acard span h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+}
+
+@media (min-width:901px) and (max-width:1024px){
+    .aboutBox {
+    padding: 10px;
+    gap: 20px;
+}
+
+     .about h1{
+    font-size: 23px;
+    width: 80vw;
+    padding-inline-start: 0px;
+} 
+
+.aboutcard
+ {
+    gap: 20px;
+    padding: 0px;
+}  
+
+.Acard {
+    width: fit-content;
+    padding: 20px 10px;
+    height: 20vh;
+}
+
+.Acard span h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+}
+/*========== end ==========*/
+
+
+
+/*========== laptop ==========*/
+@media (min-width:1281px) and (max-width:1440px){
+.Acard {
+    height: 35vh;
+}
+
+}
+
+@media (min-width:1441px) and (max-width:1680px){
+.Acard {
+    height: 30vh;
+}
+
+}
+
+@media (min-width:1681px) and (max-width:1920px){
+  .Acard {
+    height: 30vh;
+    width: 20vw;
+}
+
+}
+
+@media (min-width:1921px) and (max-width:2048px){
+   .Acard {
+    height: 27vh;
+    width: 19vw;
+}
+}
+
+@media (min-width:2049px) and (max-width:2496px){
+      .Acard {
+    height: 20vh;
+    width: 18vw;
+}
+}
+/*========== end ==========*/
+
+

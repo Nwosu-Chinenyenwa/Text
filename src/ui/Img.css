@@ -1,0 +1,102 @@
+.imgs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.imgs img{
+    width: 13vw;
+}
+
+
+
+@media (max-width:768px){
+ .imgs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 70px;
+    justify-content: center;
+}
+
+.imgs img{
+    width: 25vw;
+}
+
+}
+/*========== tablets ==========*/
+@media (min-width:789px) and (max-width:1024px){
+     .imgs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 20px;
+    justify-content: center;
+}
+}
+
+/*========== end ==========*/
+
+/*========== laptop ==========*/
+@media (min-width:1281px) and (max-width:1440px){
+     .imgs{
+    gap: 150px;
+    padding: 50px;
+}
+
+.imgs img{
+    width: 10vw;
+}
+}
+
+@media (min-width:1441px) and (max-width:1680px){
+     .imgs{
+    gap: 180px;
+    padding: 50px;
+}
+
+.imgs img{
+    width: 10vw;
+}
+}
+
+@media (min-width:1681px) and (max-width:1920px){
+     .imgs{
+    gap: 250px;
+    padding: 50px;
+}
+
+.imgs img{
+    width: 9vw;
+}
+}
+
+@media (min-width:1921px) and (max-width:2048px){
+       .imgs{
+    gap: 200px;
+    padding: 50px;
+}
+
+.imgs img{
+    width: 9vw;
+}
+}
+
+@media (min-width:2049px) and (max-width:2496px){
+         .imgs{
+    gap: 200px;
+    padding: 50px;
+}
+
+.imgs img{
+    width: 9vw;
+}
+}
+/*========== end ==========*/
+
+
+
+
+

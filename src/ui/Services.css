@@ -1,0 +1,67 @@
+.Services{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #000910;
+    color: white;
+}
+
+.pop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Services img{
+    width: 1vw;
+}
+
+.Services span h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.ServicesContent{
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.services{
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+}
+
+.services h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.pan{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pan h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pan ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pan ul li{
+    list-style:circle;
+}
+
+/*=========== Text ========== */

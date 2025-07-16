@@ -2,12 +2,14 @@ import React, { useRef } from "react";
 import "../ui/About.css";
 import heroImg from "../assets/heroimg.svg";
 import { useInView, motion } from "framer-motion";
+import SplashCursor from "./SplashCursor";
 
 export default function About() {
   const ref = useRef(null);
   const review = useInView(ref, { once: true });
   return (
     <>
+      <SplashCursor />
       <section id="about">
         <div className="about roboto">
           <motion.dev

@@ -1,0 +1,60 @@
+.accordion-container{
+      background-color:#000910 ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    padding-block-end: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqs{
+    text-align: left;
+}
+
+.accordion-container h2{
+    color: #ea580c;
+    font-size: 20px;
+}
+
+.Accordion-Item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.accordion-container h1{
+ font-size: 30px;
+ font-weight: 700;
+}
+
+.AccordWrite{
+    display: flex;
+    justify-content: space-between;
+}
+
+.AccordWrite h4:hover{
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+.Accordings{
+    background-color:#000000ad;
+    border: 1px solid #ea580c;
+    padding: 10px 20px;
+    display: flex;
+    width: 50vw;
+    text-align: left;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.Accordings span{
+padding: 10px;
+}
+
+.Accordings h3{
+cursor: pointer;
+}

@@ -7,26 +7,18 @@ import Hero from "./component/Hero";
 import Nav from "./component/Nav";
 import About from "./component/About";
 import Qrcode from "./component/Qrcode";
-import { useInView, motion } from "framer-motion";
+import Services from "./component/Services";
+import According from "./component/According";
 export default function Layout() {
-  const ref = useRef(null);
-  const review = useInView(ref, { once: true });
   return (
     <>
       <Nav />
       <Hero />
-      <div id="about">
-      < About  />
-      </div>
-      <motion.div
-      ref={ref}
-      initial={{x:-100, opacity:0}}
-      animate={review? {x:0, opacity:1}:{}}
-      transition={{duration:0.8, ease: "easeInOut"}}
-      >
+      <About />
+      <According/>
+      {/*  <Services/> */}
       <Img />
-      </motion.div>
-      <Qrcode/>
+      {/* <Qrcode /> */}
       <Contact />
       <Footer />
     </>

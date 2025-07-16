@@ -13,6 +13,9 @@ html{
   scroll-behavior: smooth;
 }
 
+body{
+  z-index: 5;
+}
 .roboto {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;

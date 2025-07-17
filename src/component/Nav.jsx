@@ -49,7 +49,9 @@ export default function Nav() {
 
       <nav className="montserrat">
         <div className="nav-menu" onClick={() => setmenu(true)}>
-          <span></span>
+          <svg width="20" height="20">
+            <circle cx="10" cy="10" r="8" fill="white" />
+          </svg>
           <h2>Menu</h2>
         </div>
         <img src={NavImg} alt="NavImg" />

@@ -11,6 +11,7 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
@@ -39,22 +40,3 @@ body{
   font-variation-settings:
     "wdth" 100;
 }
-
-
-/* Scroll */
-.scroll-float {
-  overflow: hidden;
-}
-
-.scroll-float-text {
-  display: inline-block;
-  font-size: clamp(1.6rem, 8vw, 10rem);
-  font-weight: 900;
-  text-align: center;
-  line-height: 1.5;
-}
-
-.char {
-  display: inline-block;
-}
-

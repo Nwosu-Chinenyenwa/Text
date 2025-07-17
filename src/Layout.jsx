@@ -7,17 +7,18 @@ import Hero from "./component/Hero";
 import Nav from "./component/Nav";
 import About from "./component/About";
 import Qrcode from "./component/Qrcode";
-import Services from "./component/Services";
 import According from "./component/According";
+import Blog from "./component/Blog";
 export default function Layout() {
   return (
     <>
       <Nav />
       <Hero />
       <About />
-      <According/>
+      <According />
       {/*  <Services/> */}
       <Img />
+      <Blog/>
       {/* <Qrcode /> */}
       <Contact />
       <Footer />

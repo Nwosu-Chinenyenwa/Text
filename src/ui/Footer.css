@@ -65,29 +65,4 @@ gap: 20px;
 }
 /*========== end ==========*/
 
-/*========== laptop ==========*/
-@media (min-width:1281px) and (max-width:1440px){
-
-}
-
-@media (min-width:1441px) and (max-width:1680px){
-   
-}
-
-@media (min-width:1681px) and (max-width:1920px){
-  
-}
-
-@media (min-width:1921px) and (max-width:2048px){
-
-}
-
-@media (min-width:2049px) and (max-width:2496px){
- 
-}
-/*========== end ==========*/
-
-
-
-
 

@@ -90,6 +90,7 @@ border: 0.5px solid #ff000098;
     padding: 10px;
     background-color: white;
     width: 40vw;
+    color: black;
 }
 
 .form form:nth-child(2) textarea::placeholder{

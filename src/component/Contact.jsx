@@ -8,22 +8,44 @@ export default function Contact() {
         <div className="form-write">
           <h1 className=" montserrat">contact us</h1>
           <p>
-            <em>Lorem ipsum dolor sit amet consectetur.</em>
+            <em>We’re here to help. Send us a message anytime.</em>
           </p>
         </div>
 
-        <form>
+        <form action="https://formspree.io/f/mwplwlbd" method="POST">
           <div className="form-container">
             <div className="form-input">
-              <input type="text" placeholder="Your Name*" required/>
-              <input type="email" placeholder="Your Email*" required/>
-              <input type="number" placeholder="Your Phone" required/>
+              <input
+                type="text"
+                placeholder="Your Name*"
+                required
+                name="Name"
+              />
+              <input
+                type="email"
+                placeholder="Your Email*"
+                required
+                name="Email"
+              />
+              <input
+                type="number"
+                placeholder="Your Phone"
+                required
+                name="Number"
+              />
             </div>
 
-            <textarea name="" id="" placeholder="Your Message*" required></textarea>
+            <textarea
+              name="messages"
+              className=""
+              placeholder="Your Message*"
+              required
+            ></textarea>
           </div>
 
-          <button type="submit" className="input-button" >send message</button>
+          <button type="submit" className="input-button">
+            send message
+          </button>
         </form>
       </div>
     </section>

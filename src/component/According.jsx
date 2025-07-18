@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../ui/According.css";
+import { section } from "framer-motion/client";
 
 // Accordion Item Component
 const Accordion = ({ title, content }) => {
@@ -52,6 +53,7 @@ export default function According() {
   ];
 
   return (
+    <section id="accordion">
     <div className="accordion-container">
       <span className="faqs">
       <h2>FAQs</h2>
@@ -61,5 +63,6 @@ export default function According() {
         <Accordion key={index} title={item.title} content={item.content} />
       ))}
     </div>
+    </section>
   );
 }

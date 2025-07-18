@@ -9,17 +9,21 @@ import About from "./component/About";
 import Qrcode from "./component/Qrcode";
 import According from "./component/According";
 import Blog from "./component/Blog";
+import Services from "./component/Services";
+import Domain from "./component/Domain";
 export default function Layout() {
   return (
     <>
       <Nav />
       <Hero />
+      <Domain/>
       <About />
       <According />
       {/*  <Services/> */}
-      <Img />
       <Blog/>
-      {/* <Qrcode /> */}
+      <Services/>
+      <Qrcode />
+      <Img />
       <Contact />
       <Footer />
     </>

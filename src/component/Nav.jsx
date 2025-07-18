@@ -23,25 +23,42 @@ export default function Nav() {
 
             <ul>
               <Link to={"/"}>
+              <a href="#home">
                 <li>
                   <span></span> home
                 </li>
+                </a>
               </Link>
+              <a href="#domain">
+              <li>
+                <span></span>Domain
+              </li>
+              </a>
+              <a href="#about">
               <li>
                 <span></span>about us
               </li>
+              </a>
+              <a href="#accordion">
               <li>
-                <span></span>Connected Acceleration™
+                <span></span>Question
               </li>
+              </a>
+              <a href="#chromagride">
               <li>
-                <span></span>Investment strategy
+                <span></span>satisfied cliens
               </li>
+              </a>
+              <a href="#Qrcode">
               <li>
-                <span></span>Investments
+                <span></span>generate qrcode
               </li>
+              </a>
+              <a href="#contact">
               <li>
-                <span></span>Sustainability
+                <span></span>contact us
               </li>
+              </a>
             </ul>
           </div>
         </section>
@@ -55,6 +72,7 @@ export default function Nav() {
           <h2>Menu</h2>
         </div>
         <img src={NavImg} alt="NavImg" />
+        <a href="#contact">
         <div className="nav-contact">
           <h2>Contact us </h2>
           <svg
@@ -65,6 +83,7 @@ export default function Nav() {
             <path d="M1.99974 13.0001L1.9996 11.0002L18.1715 11.0002L14.2218 7.05044L15.636 5.63623L22 12.0002L15.636 18.3642L14.2218 16.9499L18.1716 13.0002L1.99974 13.0001Z"></path>
           </svg>
         </div>
+        </a>
       </nav>
       <Outlet />
     </>

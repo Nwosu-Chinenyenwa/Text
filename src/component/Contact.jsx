@@ -3,7 +3,7 @@ import "../ui/Contact.css";
 
 export default function Contact() {
   return (
-    <section className="contact-form">
+    <section className="contact-form" id="contact">
       <div className="form">
         <div className="form-write">
           <h1 className=" montserrat">contact us</h1>

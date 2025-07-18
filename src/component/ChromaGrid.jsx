@@ -134,7 +134,7 @@ export const ChromaGrid = ({
   };
 
   return (
-    <section className="bgBlog">
+    <section className="bgBlog" id="chromagride">
       <h1>
         <img src={heroImg} alt="" />
         <ShinyText

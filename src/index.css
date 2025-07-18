@@ -16,6 +16,7 @@ html{
 
 body{
   z-index: 5;
+  background-color:white;
 }
 .roboto {
   font-family: "Roboto Condensed", sans-serif;

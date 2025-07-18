@@ -15,16 +15,15 @@
 .spline {
   position: absolute;
   top: 0;
-  z-index: 30;
   left: 0;
   pointer-events: none;
+  z-index: 100;
 }
 
 
 .hero-contain
 {
   position: relative;
-  z-index: 2;
   color: white;
   top: -500px;
   justify-content: center;
@@ -196,6 +195,10 @@ transition: 0.5s;
   left: 0;
    bottom: 0px;
   pointer-events: none;
+}
+
+#spline{
+z-index: 888;
 }
 
 

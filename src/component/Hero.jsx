@@ -8,7 +8,7 @@ export default function Hero() {
     <>
       <section id="Hero">
         <div className="hero">
-          <Spline
+          <Spline id="spline"
             scene="https://prod.spline.design/kGuu67JOE5Xuw8XA/scene.splinecode"
             wrapperClassName="spline" className="splin"
           />

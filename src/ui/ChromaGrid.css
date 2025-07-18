@@ -43,21 +43,21 @@ padding-block: 50px;
   --r: 220px;
 }
 
-@media (max-width: 1124px) {
+/* @media (max-width: 1124px) {
   .chroma-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
     gap: 0.5rem;
     padding: 0.5rem;
   }
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .chroma-grid {
     grid-template-columns: 320px;
     gap: 0.75rem;
     padding: 1rem;
   }
-}
+} */
 
 .chroma-card {
   position: relative;
@@ -225,3 +225,82 @@ padding-block: 50px;
 .shiny-text.disabled {
   animation: none;
 }
+
+
+
+@media (max-width:768px){
+
+.shiny-text
+ {
+  font-size: 20px;
+}
+
+ .chroma-grid {
+  display: flex;
+  flex-wrap: wrap;
+    }
+}
+/*========== tablets ==========*/
+@media (min-width:769px) and (max-width:900px){
+.chroma-card {
+    width: 30vw;
+}
+
+ .chroma-grid {
+  display: flex;
+  flex-wrap: wrap;
+    }
+}
+
+@media (min-width:901px) and (max-width:916px){
+ .chroma-card {
+    width: 30vw;
+}
+
+ .chroma-grid {
+  display: flex;
+  flex-wrap: wrap;
+    }
+}
+
+@media (min-width:917px) and (max-width:1024px){
+ .chroma-grid {
+  display: flex;
+  flex-wrap: wrap;
+    }
+}
+/*========== end ==========*/
+
+/*========== laptop ==========*/
+@media (min-width:1281px) and (max-width:1440px){
+
+}
+
+@media (min-width:1441px) and (max-width:1680px){
+      .footer ul li a svg{
+     width: 2.5vw;
+     padding: 10px;
+    }
+}
+
+@media (min-width:1681px) and (max-width:1920px){
+      .footer ul li a svg{
+     width: 2.5vw;
+     padding: 10px;
+    }
+}
+
+@media (min-width:1921px) and (max-width:2048px){
+      .footer ul li a svg{
+     width: 2vw;
+     padding: 10px;
+    }
+}
+
+@media (min-width:2049px) and (max-width:2496px){
+      .footer ul li a svg{
+     width: 2vw;
+     padding: 10px;
+    }
+}
+/*========== end ==========*/

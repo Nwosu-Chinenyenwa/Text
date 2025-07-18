@@ -47,13 +47,7 @@ export default function PrivacyPolicy() {
               <p>For legal and abuse prevention</p>
             </div>
             <div>
-              <h1>3. Data Protection</h1>
-              <p>Your data is stored securely and only accessible by you</p>
-              <p>We do not sell or rent your data</p>
-            </div>
-            <div>
               <h1>4. Third-Party Services Used</h1>
-              <p>Firebase Authentication</p>
               <p>Hosting on Vercel</p>
               <p>Analytics tools</p>
             </div>

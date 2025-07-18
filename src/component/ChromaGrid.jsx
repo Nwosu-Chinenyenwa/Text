@@ -4,6 +4,7 @@ import "../ui/ChromaGrid.css";
 import heroImg from "../assets/heroimg.svg";
 import { section } from "framer-motion/client";
 import ShinyText from "./ShinyText";
+import { useInView, motion } from "framer-motion";
 
 export const ChromaGrid = ({
   items,
@@ -133,17 +134,27 @@ export const ChromaGrid = ({
     card.style.setProperty("--mouse-y", `${y}px`);
   };
 
+  const ref = useRef(null);
+  const review = useInView(ref, { once: true });
   return (
     <section className="bgBlog" id="chromagride">
-      <h1>
-        <img src={heroImg} alt="" />
-        <ShinyText
-          text="Satisfied client"
-          disabled={false}
-          speed={3}
-          className="custom-class"
-        />
-      </h1>
+      <motion.div
+        ref={ref}
+        initial={{ y: 50, opacity: 0 }}
+        animate={review ? { y: 0, opacity: 1 } : {}}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="Accordion-Item"
+      >
+        <h1>
+          <img src={heroImg} alt="" />
+          <ShinyText
+            text="Satisfied client"
+            disabled={false}
+            speed={3}
+            className="custom-class"
+          />
+        </h1>
+      </motion.div>
       <div
         ref={rootRef}
         className={`chroma-grid ${className}`}

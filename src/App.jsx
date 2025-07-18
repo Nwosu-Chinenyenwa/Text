@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Footer from "./component/Footer";
@@ -16,7 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/termofuse" element={<Termofuse />} />
-        <Route path="*" element={<Page404/>}/>
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </>
   );

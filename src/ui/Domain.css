@@ -98,3 +98,19 @@
 .namecard{
     border: 1px solid black;
 }
+
+
+@media (max-width:768px){
+.search-input {
+    padding: 10px 20px;
+    width: auto;
+}
+}
+/*========== tablets ==========*/
+@media (min-width:769px) and (max-width:1024px){
+    .search-input {
+    padding: 10px 20px;
+    width: auto;
+}
+}
+/*========== end ==========*/

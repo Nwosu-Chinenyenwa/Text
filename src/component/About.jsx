@@ -7,12 +7,13 @@ import SplashCursor from "./SplashCursor";
 export default function About() {
   const ref = useRef(null);
   const review = useInView(ref, { once: true });
+
   return (
     <>
       <SplashCursor />
       <section id="about">
         <div className="about roboto">
-          <motion.dev
+          <motion.div
             ref={ref}
             initial={{ x: -100, opacity: 0 }}
             animate={review ? { x: 0, opacity: 1 } : {}}
@@ -23,18 +24,20 @@ export default function About() {
               tools for QR code generation and custom domain creation—designed
               to make sharing and branding easier than ever.
             </h1>
-          </motion.dev>
+          </motion.div>
+
           <div className="aboutBox">
-            <motion.dev
+            <motion.div
               ref={ref}
               initial={{ x: -100, opacity: 0 }}
               animate={review ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <h5>We can help you gain:</h5>
-            </motion.dev>
+            </motion.div>
+
             <div className="aboutcard">
-              <motion.dev
+              <motion.div
                 ref={ref}
                 initial={{ x: 0, opacity: 0 }}
                 animate={review ? { x: 0, opacity: 1 } : {}}
@@ -42,16 +45,17 @@ export default function About() {
               >
                 <div className="Acard">
                   <span>
-                    <img src={heroImg} alt="" /> <h3>Clear Workflows</h3>
+                    <img src={heroImg} alt="QR Code Workflow" />
+                    <h3>Smart QR Workflows</h3>
                   </span>
                   <p>
-                    Our experts will help you plan and implement clear briefing
-                    and development workflows, ensuring consistency across
-                    projects.
+                    Easily create and manage QR codes for your links with our intuitive tools — 
+                    perfect for businesses, creators, and marketers looking to boost engagement.
                   </p>
                 </div>
-              </motion.dev>
-              <motion.dev
+              </motion.div>
+
+              <motion.div
                 ref={ref}
                 initial={{ x: 0, opacity: 0 }}
                 animate={review ? { x: 0, opacity: 1 } : {}}
@@ -59,16 +63,17 @@ export default function About() {
               >
                 <div className="Acard">
                   <span>
-                    <img src={heroImg} alt="" /> <h3>Clear Workflows</h3>
+                    <img src={heroImg} alt="Domain Generator" />
+                    <h3>Catchy Domain Ideas</h3>
                   </span>
                   <p>
-                    Our experts will help you plan and implement clear briefing
-                    and development workflows, ensuring consistency across
-                    projects.
+                    Get instant, creative domain name suggestions tailored to your brand or business —
+                    no more spending hours brainstorming the perfect web identity.
                   </p>
                 </div>
-              </motion.dev>
-              <motion.dev
+              </motion.div>
+
+              <motion.div
                 ref={ref}
                 initial={{ x: 0, opacity: 0 }}
                 animate={review ? { x: 0, opacity: 1 } : {}}
@@ -76,15 +81,15 @@ export default function About() {
               >
                 <div className="Acard">
                   <span>
-                    <img src={heroImg} alt="" /> <h3>Clear Workflows</h3>
+                    <img src={heroImg} alt="Link Management" />
+                    <h3>Effortless Link Management</h3>
                   </span>
                   <p>
-                    Our experts will help you plan and implement clear briefing
-                    and development workflows, ensuring consistency across
-                    projects.
+                    Customize, organize, and share your links easily. Connect your QR codes and
+                    domains to track user engagement and streamline your online presence.
                   </p>
                 </div>
-              </motion.dev>
+              </motion.div>
             </div>
           </div>
         </div>

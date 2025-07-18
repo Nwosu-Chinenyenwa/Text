@@ -1,29 +1,39 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "../ui/According.css";
-import { section } from "framer-motion/client";
+import { useInView, motion } from "framer-motion";
 
 // Accordion Item Component
 const Accordion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef(null);
+  const review = useInView(ref, { once: true });
 
   return (
-    <div className="Accordion-Item">
+    <motion.div
+      ref={ref}
+      initial={{ y: 50, opacity: 0 }}
+      animate={review ? { y: 0, opacity: 1 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="Accordion-Item"
+    >
       <div onClick={() => setIsOpen((prev) => !prev)}>
         <div className="Accordings">
-        <span className="AccordWrite">
-          <h4>{title}</h4>
-          <h3>{isOpen ? "-" : "+"}</h3>
-        </span>
-      {isOpen && <p>{content}</p>}
+          <span className="AccordWrite">
+            <h4>{title}</h4>
+            <h3>{isOpen ? "-" : "+"}</h3>
+          </span>
+          {isOpen && <p>{content}</p>}
+        </div>
       </div>
-
-      </div>
-    </div>
+    </motion.div>
   );
 };
 
 // Parent Component
 export default function According() {
+  const ref = useRef(null);
+  const review = useInView(ref, { once: true });
+
   const data = [
     {
       title: "What is Text used for?",
@@ -54,15 +64,23 @@ export default function According() {
 
   return (
     <section id="accordion">
-    <div className="accordion-container">
-      <span className="faqs">
-      <h2>FAQs</h2>
-      <h1>Common Questions</h1>
-      </span>
-      {data.map((item, index) => (
-        <Accordion key={index} title={item.title} content={item.content} />
-      ))}
-    </div>
+      <div className="accordion-container">
+        <motion.div
+          ref={ref}
+          initial={{ x: -100, opacity: 0 }}
+          animate={review ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <span className="faqs">
+            <h2>FAQs</h2>
+            <h1>Common Questions</h1>
+          </span>
+        </motion.div>
+
+        {data.map((item, index) => (
+          <Accordion key={index} title={item.title} content={item.content} />
+        ))}
+      </div>
     </section>
   );
 }

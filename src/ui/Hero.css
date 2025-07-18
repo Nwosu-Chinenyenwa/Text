@@ -197,11 +197,6 @@ transition: 0.5s;
   pointer-events: none;
 }
 
-#spline{
-z-index: 888;
-}
-
-
   .hero-contain {
     top: 0px;
 }

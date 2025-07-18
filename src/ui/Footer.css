@@ -71,31 +71,19 @@ gap: 20px;
 }
 
 @media (min-width:1441px) and (max-width:1680px){
-      .footer ul li a svg{
-     width: 2.5vw;
-     padding: 10px;
-    }
+   
 }
 
 @media (min-width:1681px) and (max-width:1920px){
-      .footer ul li a svg{
-     width: 2.5vw;
-     padding: 10px;
-    }
+  
 }
 
 @media (min-width:1921px) and (max-width:2048px){
-      .footer ul li a svg{
-     width: 2vw;
-     padding: 10px;
-    }
+
 }
 
 @media (min-width:2049px) and (max-width:2496px){
-      .footer ul li a svg{
-     width: 2vw;
-     padding: 10px;
-    }
+ 
 }
 /*========== end ==========*/
 

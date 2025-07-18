@@ -16,12 +16,11 @@ export default function Layout() {
     <>
       <Nav />
       <Hero />
-      <Domain/>
+      <Domain />
       <About />
       <According />
-      {/*  <Services/> */}
-      <Blog/>
-      <Services/>
+      <Blog />
+      <Services />
       <Qrcode />
       <Img />
       <Contact />

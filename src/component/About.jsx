@@ -3,6 +3,7 @@ import "../ui/About.css";
 import heroImg from "../assets/heroimg.svg";
 import { useInView, motion } from "framer-motion";
 import SplashCursor from "./SplashCursor";
+import usePersistedState from "./UsePersistedState";
 
 export default function About() {
   const ref = useRef(null);

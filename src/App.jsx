@@ -6,10 +6,11 @@ import Contact from "./component/Contact";
 import PrivacyPolicy from "./component/PrivacyPolicy";
 import Termofuse from "./component/Termofuse";
 import Page404 from "./component/Page404";
+import UsePersistedState from "./component/UsePersistedState";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function SaveLastPage() {
-  const location = useLocation();
+  const location = UsePersistedState()
   useEffect(() => {
     const setLastPage = localStorage.setItem("setLastPage", location.pathname);
   }, [location]);

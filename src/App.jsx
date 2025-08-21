@@ -1,16 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
 import Footer from "./component/Footer";
 import Contact from "./component/Contact";
+import Layout from "./Layout.jsx"
 import PrivacyPolicy from "./component/PrivacyPolicy";
 import Termofuse from "./component/Termofuse";
 import Page404 from "./component/Page404";
-import UsePersistedState from "./component/UsePersistedState";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function SaveLastPage() {
-  const location = UsePersistedState()
+  const location = useLocation();
   useEffect(() => {
     const setLastPage = localStorage.setItem("setLastPage", location.pathname);
   }, [location]);
@@ -31,8 +30,8 @@ function RestorLastPage() {
 function App() {
   return (
     <>
-          <SaveLastPage />
-        <RestorLastPage />
+      <SaveLastPage />
+      <RestorLastPage />
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/footer" element={<Footer />} />

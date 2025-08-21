@@ -11,6 +11,7 @@ import According from "./component/According";
 import Blog from "./component/Blog";
 import Services from "./component/Services";
 import Domain from "./component/Domain";
+
 export default function Layout() {
   return (
     <>
